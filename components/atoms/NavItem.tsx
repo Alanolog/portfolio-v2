@@ -2,7 +2,6 @@ import React from "react";
 import styled from "styled-components";
 import Link from "next/link";
 const Wrapper = styled.li`
-  padding: 0 1rem;
   font-family: "burtons";
   color: white;
 `;
