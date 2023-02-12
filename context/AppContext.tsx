@@ -1,14 +1,10 @@
 import React from "react";
 type appContextType = {
-  darkMode: boolean;
   isEnglish: boolean;
-  switchDarkMode: () => void;
   switchIsEnglish: () => void;
 };
 const appContextDefaultValues: appContextType = {
-  darkMode: false,
   isEnglish: false,
-  switchDarkMode: () => {},
   switchIsEnglish: () => {},
 };
 const AppContext = React.createContext<appContextType>(appContextDefaultValues);
@@ -22,18 +18,13 @@ type Props = {
 };
 
 export function AppContextProvider({ children }: Props) {
-  const [darkMode, setDarkMode] = React.useState(false);
   const [isEnglish, setIsEnglish] = React.useState(false);
 
   const switchIsEnglish = () => {
     setIsEnglish((prevValue) => !prevValue);
   };
 
-  const switchDarkMode = () => {
-    setDarkMode((prevValue) => !prevValue);
-  };
-
-  const value = { darkMode, isEnglish, switchDarkMode, switchIsEnglish };
+  const value = { isEnglish, switchIsEnglish };
   return (
     <>
       <AppContext.Provider value={value}>{children}</AppContext.Provider>
