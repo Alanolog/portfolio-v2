@@ -1,4 +1,4 @@
-import { Navbar, Hero, AboutMe, Portfolio } from "../components";
+import { Navbar, Hero, AboutMe, Portfolio, Footer } from "../components";
 import Head from "next/head";
 
 export default function Home() {
@@ -17,6 +17,7 @@ export default function Home() {
       <Hero />
       <AboutMe />
       <Portfolio />
+      <Footer />
     </>
   );
 }

@@ -53,7 +53,6 @@ export const Navbar: React.FC = () => {
           link="/#about-me"
         />
         <NavItem content="Portfolio" link="/#portfolio" />
-        <NavItem content="Tech Stack" link="/#tech-stack" />
         <NavItem
           content={isEnglish ? "Download CV" : "Pobierz CV"}
           link={isEnglish ? "./Alan_Rutyna_CV_EN.pdf" : "./Alan_Rutyna_CV.pdf"}
