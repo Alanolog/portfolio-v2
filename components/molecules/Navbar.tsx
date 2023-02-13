@@ -13,6 +13,7 @@ const Wrapper = styled.nav`
   justify-content: space-between;
   gap: 1rem;
   color: white;
+  z-index: 10;
   @media (max-width: 768px) {
     padding: 0.25rem 0.5rem;
     flex-direction: column;
@@ -47,9 +48,12 @@ export const Navbar: React.FC = () => {
     <Wrapper>
       <p style={{ padding: "0.5rem" }}>Alan&nbsp;Rutyna</p>
       <Nav>
-        <NavItem content={isEnglish ? "About me" : "O Mnie"} link="#about-me" />
-        <NavItem content="Portfolio" link="#portfolio" />
-        <NavItem content="Tech Stack" link="#tech-stack" />
+        <NavItem
+          content={isEnglish ? "About me" : "O Mnie"}
+          link="/#about-me"
+        />
+        <NavItem content="Portfolio" link="/#portfolio" />
+        <NavItem content="Tech Stack" link="/#tech-stack" />
         <NavItem
           content={isEnglish ? "Download CV" : "Pobierz CV"}
           link={isEnglish ? "./Alan_Rutyna_CV_EN.pdf" : "./Alan_Rutyna_CV.pdf"}

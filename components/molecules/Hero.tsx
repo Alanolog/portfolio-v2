@@ -3,7 +3,7 @@ import styled from "styled-components";
 import { AiOutlineGithub } from "react-icons/ai";
 import Link from "next/link";
 
-const Wrapper = styled.div`
+const Wrapper = styled.section`
   background-image: url("./main-bg.jpg");
   background-size: cover;
   width: 100vw;
