@@ -11,6 +11,7 @@ const Wrapper = styled.section`
   padding: 2rem 0;
   gap: 1rem;
   min-height: 90vh;
+  text-align: center;
   h2 {
     text-transform: uppercase;
     font-weight: 100;
@@ -25,10 +26,30 @@ const Wrapper = styled.section`
   p {
     font-size: 1.25rem;
   }
+  @media (max-width: 768px) {
+    padding: 2rem 1rem;
+    h2 {
+      font-size: 2rem;
+      font-weight: 600;
+    }
+    p {
+      font-size: 1rem;
+      font-weight: 500;
+    }
+    h4 {
+      font-size: 1.5rem;
+      font-weight: 500;
+    }
+  }
 `;
 const ImageBox = styled.div`
   position: relative;
-  background-color: teal;
+  background: rgb(0, 128, 128);
+  background: linear-gradient(
+    60deg,
+    rgba(0, 128, 128, 0.95) 53%,
+    rgba(0, 255, 255, 1) 100%
+  );
   border-radius: 50%;
   width: 200px;
   height: 200px;
